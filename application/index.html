@@ -5,7 +5,7 @@
   </script>
 </head>
 <body>
-<p>Count numbers: <output id="result"></output></p>
+<p>Cabot Weather: <output id="result"></output></p>
 <button onclick="startWorker()">Start Worker</button>
 <button onclick="stopWorker()">Stop Worker</button>
 
@@ -29,6 +29,7 @@ function startWorker() {
 
 function stopWorker() {
   w.terminate();
+  document.getElementById("result").innerHTML = "";
   w = undefined;
 }
 </script>
